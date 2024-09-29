@@ -84,6 +84,21 @@
             bottom: 0;
             width: 100%;
         }
+        .search-results {
+            margin-top: 10px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .search-results li {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .search-results li a {
+            text-decoration: none;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -119,8 +134,36 @@
     <p>&copy; 2024 CharityMatch. All rights reserved.</p>
 </footer>
 
-</body>
-</html>
+    <script>
+    // Array of pages for search
+    const pages = [
+        { title: "Home", url: "https://ProFFet9029.github.io/senior-project/index.html", keywords: "home, index, welcome" },
+        { title: "Contact", url: "https://ProFFet9029.github.io/senior-project/contact.html", keywords: "contact, email, address, support" },
+        { title: "Save the Children", url: "https://ProFFet9029.github.io/senior-project/Save the Children.html", keywords: "save the children, charity, children" }
+    ];
 
+    // Function to perform search
+    function performSearch() {
+        const input = document.getElementById("searchInput").value.toLowerCase();
+        const results = pages.filter(page => 
+            page.title.toLowerCase().includes(input) || 
+            page.keywords.toLowerCase().includes(input)
+        );
+
+        // Display search results
+        const resultsContainer = document.getElementById("searchResults");
+        resultsContainer.innerHTML = "";
+        if (results.length > 0) {
+            results.forEach(result => {
+                const li = document.createElement("li");
+                li.innerHTML = `<a href="${result.url}">${result.title}</a>`;
+                resultsContainer.appendChild(li);
+            });
+        } else {
+            resultsContainer.innerHTML = "<li>No results found</li>";
+        }
+    }
+</script>
+    
 </body>
 </html>
