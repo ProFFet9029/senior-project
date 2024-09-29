@@ -137,7 +137,7 @@
 
 <script>
     // Get the canvas context
-    const ctx = document.getElementById('contributionChart').getContext('2d');
+   const ctx = document.getElementById('contributionChart').getContext('2d');
 
     // Create the pie chart
     const contributionChart = new Chart(ctx, {
@@ -146,7 +146,7 @@
             labels: ['Charity Contribution', 'Overhead Costs'],
             datasets: [{
                 data: [84, 16], // 84% charity contribution, 16% overhead costs
-                backgroundColor: ['#ff5722', '#ffffff'], // red for charity, white for overhead
+                backgroundColor: ['#ff0000', '#cccccc'], // Red for charity, light grey for overhead
             }]
         },
         options: {
