@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://raw.githubusercontent.com/ProFFet9029/senior-project/main/Save the World.png');
+            background-image: url('https://raw.githubusercontent.com/ProFFet9029/senior-project/main/Save%20the%20World.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -37,6 +37,7 @@
         }
         .search-bar {
             margin-top: 10px;
+            text-align: center;
         }
         .search-bar input[type="text"] {
             padding: 5px;
@@ -113,8 +114,8 @@
 </nav>
 
 <section class="search-bar">
-    <form action="/search" method="GET">
-        <input type="text" name="query" placeholder="Search...">
+    <form onsubmit="event.preventDefault(); performSearch();">
+        <input type="text" id="searchInput" name="query" placeholder="Search...">
         <input type="submit" value="Search">
     </form>
 </section>
@@ -124,22 +125,27 @@
     <p>Save the Children works to improve the lives of children through education, healthcare, and protection from harm.</p>
     <a href="https://www.savethechildren.org/" target="_blank">Visit Charity</a>
 </section>
-    
+
 <section>
     <h2>CharityMatch, the Charity Information Repository, is a tool for generous donors to find charities to donate to.</h2>
     <p>CharityMatch, the Charity Information Repository</p>
+</section>
+
+<section>
+    <h2>Search Results:</h2>
+    <ul class="search-results" id="searchResults"></ul>
 </section>
 
 <footer>
     <p>&copy; 2024 CharityMatch. All rights reserved.</p>
 </footer>
 
-    <script>
+<script>
     // Array of pages for search
     const pages = [
         { title: "Home", url: "https://ProFFet9029.github.io/senior-project/index.html", keywords: "home, index, welcome" },
         { title: "Contact", url: "https://ProFFet9029.github.io/senior-project/contact.html", keywords: "contact, email, address, support" },
-        { title: "Save the Children", url: "https://ProFFet9029.github.io/senior-project/Save the Children.html", keywords: "save the children, charity, children" }
+        { title: "Save the Children", url: "https://ProFFet9029.github.io/senior-project/Save%20the%20Children.html", keywords: "save the children, charity, children" }
     ];
 
     // Function to perform search
@@ -164,6 +170,6 @@
         }
     }
 </script>
-    
+
 </body>
 </html>
