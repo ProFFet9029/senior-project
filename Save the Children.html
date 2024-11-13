@@ -62,106 +62,16 @@
             bottom: 0;
             width: 100%;
         }
-        .learn-more {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #ff5722;
-            color: white;
-            border: none;
-            cursor: pointer;
+        .large-percentage {
             text-align: center;
-            display: block;
-            width: 100%;
-            border-radius: 5px;
+            font-size: 72px;
+            font-weight: bold;
+            color: #ff0000;
+            margin-top: 20px;
         }
-        .learn-more:hover {
-            background-color: #e64a19;
+        .percentage-info {
+            text-align: center;
+            font-size: 16px;
+            color: #555;
         }
-        .chart-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px 0;
-        }
-        canvas {
-            max-width: 300px;
-            max-height: 300px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Save the Children</h1>
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<section>
-    <div class="chart-container">
-        <canvas id="contributionChart"></canvas>
-        <p>Percentage of contributions used towards overhead costs</p>
-    </div>
-    
-    <h2>About Save the Children</h2>
-    <p class="about">
-        Save the Children is a global charity that works to improve the lives of children around the world. Founded in 1919, 
-        the organization operates in over 100 countries, focusing on health, education, protection, and disaster relief for children in need.
-    </p>
-    
-    <div class="mission">
-        <h3>Mission</h3>
-        <p>
-            Save the Children’s mission is to inspire breakthroughs in the way the world treats children and to achieve immediate and lasting change in their lives.
-            They work tirelessly to ensure that every child has the opportunity to grow up healthy, educated, and safe.
-        </p>
-    </div>
-
-    <div class="impact">
-        <h3>Impact</h3>
-        <p>
-            Over the past century, Save the Children has positively impacted the lives of hundreds of millions of children.
-            Whether responding to emergencies, improving health care, or increasing access to quality education, the charity has helped make a difference in some of the most vulnerable communities across the globe.
-        </p>
-    </div>
-
-    <a class="learn-more" href="https://www.savethechildren.org" target="_blank">Learn More at Save the Children Website</a>
-</section>
-
-<footer>
-    <p>&copy; 2024 CharityMatch - All Rights Reserved</p>
-</footer>
-
-<script>
-    // Get the canvas context
-   const ctx = document.getElementById('contributionChart').getContext('2d');
-
-    // Create the pie chart
-    const contributionChart = new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ['Charity Contribution', 'Overhead Costs'],
-            datasets: [{
-                data: [84, 16], // 84% charity contribution, 16% overhead costs
-                backgroundColor: ['#ff0000', '#cccccc'], // Red for charity, light grey for overhead
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    display: false, // Hide legend if not needed
-                }
-            }
-        }
-    });
-</script>
-
-<!-- Include Chart.js from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-</body>
-</html>
+        .learn-more
