@@ -113,6 +113,13 @@
     <a href="https://ProFFet9029.github.io/senior-project/Contact.html">Contact</a>
 </nav>
 
+<!-- Move the featured section above the search bar -->
+<section class="featured">
+    <h2>Featured Charity: Save the Children</h2>
+    <p>Save the Children works to improve the lives of children through education, healthcare, and protection from harm.</p>
+    <a href="https://www.savethechildren.org/" target="_blank">Visit Charity</a>
+</section>
+
 <section class="search-bar">
     <form onsubmit="event.preventDefault(); performSearch();">
         <input type="text" id="searchInput" name="query" placeholder="Search...">
@@ -120,20 +127,15 @@
     </form>
 </section>
 
-<section class="featured">
-    <h2>Featured Charity: Save the Children</h2>
-    <p>Save the Children works to improve the lives of children through education, healthcare, and protection from harm.</p>
-    <a href="https://www.savethechildren.org/" target="_blank">Visit Charity</a>
+<!-- Move the search results directly below the search bar -->
+<section>
+    <h2>Search Results:</h2>
+    <ul class="search-results" id="searchResults"></ul>
 </section>
 
 <section>
     <h2>CharityMatch, the Charity Information Repository, is a tool for generous donors to find charities to donate to.</h2>
     <p>CharityMatch, the Charity Information Repository</p>
-</section>
-
-<section>
-    <h2>Search Results:</h2>
-    <ul class="search-results" id="searchResults"></ul>
 </section>
 
 <footer>
@@ -145,8 +147,8 @@
     const pages = [
         { title: "Home", url: "https://ProFFet9029.github.io/senior-project/index.html", keywords: "home, index, welcome" },
         { title: "Contact", url: "https://ProFFet9029.github.io/senior-project/contact.html", keywords: "contact, email, address, support" },
-        { title: "Save the Children", url: "https://proffet9029.github.io/senior-project/Save%20the%20Children.html", keywords: "save the children, charity, children" }
-        { title: "testlisting", url: "https://proffet9029.github.io/senior-project/testlisting.html", keywords: "test"}
+        { title: "Save the Children", url: "https://ProFFet9029.github.io/senior-project/Save%20the%20Children.html", keywords: "save the children, charity, children" },
+        { title: "testlisting", url: "https://ProFFet9029.github.io/senior-project/testlisting.html", keywords: "test" }
     ];
 
     // Function to perform search
