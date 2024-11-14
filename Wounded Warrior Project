@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>National Fire Prevention Association - Charity Information</title>
+    <title>Wounded Warrior Project - Charity Information</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -90,7 +90,7 @@
 <body>
 
 <header>
-    <h1>The NFPA</h1>
+    <h1>Wounded Warrior Project</h1>
 </header>
 
 <nav>
@@ -100,15 +100,15 @@
 <section>
     <h2>About the NFPA</h2>
     <div class="about">
-        <p>The National Fire Prevention Association helps make people aware of the risks of fire and how to prevent it.</p>
+        <p>The Wounded Warrior Project is an organization with the purpose of aiding wounded soldiers after they have come home.</p>
     </div>
     <div class="mission">
         <h2>Charity Mission</h2>
-        <p>By helping make others more aware of fire and fire sources, such as rogue electricity and gas fumes, citizens can better take steps to prevent the risk of fire breaking out.</p>
+        <p>The mission of the Wounded Warrior Project is to honor and empower wounded warriors. Our purpose is: to raise awareness and enlist the public's aid for the needs of severely injured service men and women; to help severely injured service members aid and assist each other; and to provide unique, direct programs and services to meet the needs of severely injured service members.</p>
     </div>
     <div class="impact">
         <h2>Charity Impact</h2>
-        <div class="large-percentage">65-70%</div>
+        <div class="large-percentage">~70%</div>
         <div class="percentage-info">of donations go to making citizens more aware of fire risks and fire hazards in their everyday lives and how to prevent a fire breaking out.</div>
     </div>
     <a href="#" class="learn-more">Learn More</a>
