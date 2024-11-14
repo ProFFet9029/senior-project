@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Save the Children - Charity Information</title>
+    <title>Charity Name - Charity Information</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -85,15 +85,19 @@
         .learn-more:hover {
             background-color: #e64a19;
         }
-        .donate {
-            display: inline-block;
+        .buttons-container {
+            display: flex;
+            justify-content: flex-end;
             margin-top: 20px;
+        }
+        .donate {
             padding: 10px 20px;
             background-color: #388e3c;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-size: 18px;
+            margin-left: 15px;
         }
         .donate:hover {
             background-color: #2e7d32;
@@ -103,7 +107,7 @@
 <body>
 
 <header>
-    <h1>Save the Children</h1>
+    <h1>CHARITY TITLE GOES HERE</h1>
 </header>
 
 <nav>
@@ -111,26 +115,36 @@
 </nav>
 
 <section>
-    <h2>About Us</h2>
+    <h2>About This Charity</h2>
     <div class="about">
-        <p>Save the Children works to improve the lives of children through education, healthcare, and protection from harm.</p>
+        <p>Charity Overview goes here..</p>
     </div>
     <div class="mission">
-        <h2>Our Mission</h2>
-        <p>We aim to ensure every child has the right to a healthy start in life, the opportunity to learn, and protection from harm.</p>
+        <h2>Charity Mission</h2>
+        <p>Mission Statement goes here</p>
     </div>
     <div class="impact">
-        <h2>Our Impact</h2>
-        <p>Over 90% of donations go directly to programs that benefit children worldwide, making a measurable difference.</p>
+        <h2>Charity Impact</h2>
+        <p>Put the donation breakdown in a percentage. Replace the percentage on the next line as well for the amount that goes towards the cause.</p>
         <div class="large-percentage">90%</div>
         <div class="percentage-info">of donations go directly to helping children</div>
     </div>
-    <a href="https://www.savethechildren.org/" class="learn-more" target="_blank">Learn More</a>
-    <a href="https://support.savethechildren.org/site/Donation2?idb=1437191764&df_id=1620&mfc_pref=T&1620.donation=form1&1620_donation=form1" class="donate" target="_blank">Donate</a>
+    <div class="news">
+        <h2>Recent Charity News</h2>
+        <ul>
+            <li><a href="#">News1</a></li>
+            <li><a href="#">News2</a></li>
+            <li><a href="#">News3</a></li>
+        </ul>
+    </div>
+    <div class="buttons-container">
+        <a href="https://CHARITYHOMEPAGE.com" class="learn-more">Learn More</a>
+        <a href="https://CHARITYDONATIONLINK.com" class="donate" target="_blank">Donate</a>
+    </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Save the Children. All rights reserved.</p>
+    <p>&copy; 2024 Charity Name. All rights reserved.</p>
 </footer>
 
 </body>
