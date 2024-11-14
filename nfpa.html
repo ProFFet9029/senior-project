@@ -3,92 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Name - Listing Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>National Fire Prevention Association - Charity Information</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1, h2 {
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
-        .section {
-            margin-bottom: 30px;
-        }
-        .donate-button {
-            display: inline-block;
-            background-color: #4CAF50;
+        header {
+            background-color: #ff5722;
             color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff5722;
+        }
+        .about, .mission, .impact {
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .large-percentage {
+            text-align: center;
+            font-size: 72px;
+            font-weight: bold;
+            color: #ff5722;
+            margin-top: 20px;
+        }
+        .percentage-info {
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+        }
+        .learn-more {
+            display: inline-block;
+            margin-top: 20px;
             padding: 10px 20px;
+            background-color: #ff5722;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-weight: bold;
+            font-size: 18px;
         }
-        #search-form {
-            margin-bottom: 20px;
-        }
-        #search-input {
-            padding: 10px;
-            width: 70%;
-            font-size: 16px;
-        }
-        #search-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
+        .learn-more:hover {
+            background-color: #e64a19;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>National Fire Protection Association (NFPA)</h1>
-    </header>
 
-        <section class="section">
-            <h2>NFPA's Mission</h2>
-            <p>NFPA strives to promote safety with fire and fire sources, such as electricity.</p>
-        </section>
+<header>
+    <h1>Save the Children</h1>
+</header>
 
-        <section class="section">
-            <h2>Recent News</h2>
-            <ul>
-                <li><a href="https://www.nfpa.org/events/webinars">NFPA Webinars</a></li>
-                <li><a href="https://www.nfpa.org/events/fire-prevention-week/fire-prevention-week-toolkit">Fire Prevention Week Toolkit Guide</a></li>
-                <li><a href="https://www.nfpa.org/events/conference/expo">NFPA Expo</a></li>
-            </ul>
-        </section>
+<nav>
+    <a href="https://proffet9029.github.io/senior-project/">Home</a>
+</nav>
 
-        <section class="section">
-            <h2>Financial Breakdown</h2>
-            <p>View our detailed financial information:</p>
-            <ul>
-                <li><a>For every 1 dollar donated, 65-70% of that dollar will be used for the program, while the remainder is set aside for administrative overhead.</a></li>
-            </ul>
-        </section>
+<section>
+    <h2>About the NFPA</h2>
+    <div class="about">
+        <p>The National Fire Prevention Association helps make people aware of the risks of fire and how to prevent it.</p>
+    </div>
+    <div class="mission">
+        <h2>Charity Mission</h2>
+        <p>By helping make others more aware of fire and fire sources, such as rogue electricity and gas fumes, citizens can better take steps to prevent the risk of fire breaking out.</p>
+    </div>
+    <div class="impact">
+        <h2>Charity Impact</h2>
+        <div class="large-percentage">65-70%</div>
+        <div class="percentage-info">of donations go to making citizens more aware of fire risks and fire hazards in their everyday lives and how to prevent a fire breaking out.</div>
+    </div>
+    <a href="#" class="learn-more">Learn More</a>
+</section>
 
-        <section class="section">
-            <a href="https://www.nfpa.org/membership#membership%20types" class="donate-button">Get a Membership to the NFPA!</a>
-        </section>
-    </main>
+<footer>
+    <p>&copy; 2024 NFPA. All rights reserved.</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2024 NFPA. All rights reserved.</p>
-    </footer>
-
-    <script>
-        document.getElementById('search-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            var searchInput = document.getElementById('search-input').value;
-            var githubUrl = 'https://github.com/' + searchInput;
-            window.open(githubUrl, '_blank');
-        });
-    </script>
 </body>
 </html>
