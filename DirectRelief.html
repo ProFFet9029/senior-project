@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Direct Relief - Charity Information</title>
     <style>
+        /* CSS styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -19,9 +20,6 @@
             padding: 10px 0;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-        }
         nav {
             background-color: #333;
             padding: 10px;
@@ -32,9 +30,6 @@
             margin: 0 15px;
             text-decoration: none;
             font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
         }
         section {
             padding: 20px;
@@ -47,25 +42,14 @@
         h2 {
             color: #ff5722;
         }
-        .about, .mission, .impact {
-            line-height: 1.6;
-            margin-top: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .about, .mission, .impact, .news {
+            margin-bottom: 20px;
         }
         .large-percentage {
             text-align: center;
             font-size: 72px;
             font-weight: bold;
             color: #ff5722;
-            margin-top: 20px;
         }
         .percentage-info {
             text-align: center;
@@ -88,6 +72,12 @@
         }
         .learn-more:hover, .donate:hover {
             background-color: #e64a19;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -126,8 +116,10 @@
     </div>
 </section>
 
-<a href="https://www.directrelief.org/" class="learn-more">Learn More</a>
-<a href="https://www.directrelief.org/donate/" class="donate" target="_blank">Donate</a>
+<div class="button-container">
+    <a href="https://www.directrelief.org/" class="learn-more">Learn More</a>
+    <a href="https://www.directrelief.org/donate/" class="donate" target="_blank">Donate</a>
+</div>
 
 <footer>
     <p>&copy; 2024 Direct Relief. All rights reserved.</p>
