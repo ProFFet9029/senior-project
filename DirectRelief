@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Direct Relief - Charity Information</title>
+    <style>
+        /* CSS styles */
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Direct Relief</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+</nav>
+
+<section>
+    <h2>About This Charity</h2>
+    <div class="about">
+        <p>Direct Relief is a humanitarian organization committed to improving the health and lives of people affected by poverty and emergencies. They provide medical assistance to enhance the quality of life for individuals in need.</p>
+    </div>
+    <div class="mission">
+        <h2>Charity Mission</h2>
+        <p>To improve the health and lives of people affected by poverty and emergencies without regard to politics, religion, or ability to pay.</p>
+    </div>
+    <div class="impact">
+        <h2>Charity Impact</h2>
+        <p>Direct Relief is recognized for its efficiency, with 100% of private donations going to programs.</p>
+        <div class="large-percentage">100%</div>
+        <div class="percentage-info">of donations go directly to programs</div>
+    </div>
+    <div class="news">
+        <h2>Recent Charity News</h2>
+        <ul>
+            <li><a href="#">Direct Relief Responds to Global Health Crises</a></li>
+            <li><a href="#">Innovative Mapping Technology Enhances Disaster Response</a></li>
+            <li><a href="#">Partnerships Expand Access to Essential Medicines</a></li>
+        </ul>
+    </div>
+</section>
+
+<a href="https://www.directrelief.org/" class="learn-more">Learn More</a>
+<a href="https://www.directrelief.org/donate/" class="donate" target="_blank">Donate</a>
+
+<footer>
+    <p>&copy; 2024 Direct Relief. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
