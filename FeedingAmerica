@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Feeding America - Charity Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fabeaf;
+            color: #333;
+        }
+        header {
+            background-color: #fa1a04;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fabeaf;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        section:last-of-type {
+            margin-bottom: 70px;
+        }
+        h2 {
+            color: #fa1a04;
+        }
+        .about, .mission, .impact {
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .large-percentage {
+            text-align: center;
+            font-size: 72px;
+            font-weight: bold;
+            color: #fa1a04;
+            margin-top: 20px;
+        }
+        .percentage-info {
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+        }
+        .learn-more {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fa1a04;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .learn-more:hover {
+            background-color: #bc0e00;
+        }
+        .donate-here {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #13f915;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .donate-here:hover {
+            background-color: #12af13;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Feeding America</h1>
+</header>
+
+<nav>
+    <a href="https://proffet9029.github.io/senior-project/">Home</a>
+</nav>
+
+<section>
+    <h2>About Feeding America</h2>
+    <div class="about">
+        <p>Feeding America fights hunger by working with food banks, pantries, and meal programs to provide food to those in need.</p>
+    </div>
+    <div class="mission">
+        <h2>Charity Mission</h2>
+        <p>End hunger in the United States by ensuring every individual has access to enough nutritious food. They achieve this by connecting people in need with food resources through a vast network of food banks and partner organizations while also advocating for policies to address the root causes of hunger.</p>
+    </div>
+    <div class="impact">
+        <h2>Charity Impact</h2>
+        <div class="large-percentage">98.3%</div>
+        <div class="percentage-info">of donations go to ensuring families and individuals are fed and have access to resources to get them the food they need .</div>
+    </div>
+    <div class="news">
+        <h2>Recent Charity News</h2>
+        <ul>
+            <li><a href="https://www.feedingamerica.org/take-action">Survivor Stories</a></li>
+            <li><a href="https://www.feedingamerica.org/our-work">Journal Articles</a></li>
+            <li><a href="https://www.feedingamerica.org/hunger-blog">NFPA Blogposts</a></li>
+        </ul>
+    </div>
+    <div style="text-align: center;">
+        <a href="https://www.feedingamerica.org/hunger-in-america">Learn More</a>
+        <a href="https://give.feedingamerica.org/ke0gAZVnGECWLPSIbgmCsg2">Donate Here</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Feeding America. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
