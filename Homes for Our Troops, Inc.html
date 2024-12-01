@@ -12,6 +12,12 @@
             padding: 0;
             background-color: #f1e9a6;
             color: #333;
+            /*position: relative;*/
+        }
+        body::after{
+            content: '';
+            display: block;
+            height: 50px;
         }
         header {
             background-color: #fa1a04;
@@ -54,7 +60,8 @@
         footer {
             background-color: #333;
             color: white;
-            padding: 10px;
+            /*padding: 5px;*/
+            max-height: 50px;
             text-align: center;
             position: fixed;
             bottom: 0;
@@ -72,7 +79,7 @@
             font-size: 16px;
             color: #555;
         }
-        .button-container {
+         .button-container {
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -90,13 +97,14 @@
         }
         .learn-more:hover, .donate:hover {
             background-color: #bc0e00;
-     
-    </style>
+        } /*This } was missing */
+
+</style>
 </head>
 <body>
 
 <header>
-    <h1>Homse For Our Troops, Inc</h1>
+    <h1>Homes For Our Troops, Inc</h1>
 </header>
 
 <nav>s
@@ -106,18 +114,25 @@
 <section>
     <h2>About Homes For Our Troops</h2>
     <div class="about">
-        <p></p>
+        <p>Homes For Our Troops is an organization that works to help veterans find homes.</p>
     </div>
     <div class="mission">
         <h2>Charity Mission</h2>
-        <p>The mission of Homes For Our Troops is To build and donate specially adapted custom homes nationwide for severely injured post-9/11 Veterans, 
+        <p>The mission of Homes For Our Troops is to build and donate specially adapted custom homes nationwide for severely injured post-9/11 Veterans, 
           to enable them to rebuild their lives.</p>
     </div>
     <div class="impact">
         <h2>Charity Impact</h2>
         <div class="large-percentage">~88%</div>
-        <div class="percentage-info">of donations go to various services and programs of the Wounded Warrior Project.</div>
+        <div class="percentage-info">of donations go to various services and programs of Homes For Our Troops.</div>
         <p>Source: <a href= "https://www.hfotusa.org/mission/financials/">Financials of HFOT</a></p>
+    </div>
+    <div class="news">
+        <h2>Recent Charity News/Events/Programs</h2>
+        <ul>
+            <li><a href="https://www.hfotusa.org/building-homes/veterans/"  target="_blank">
+                List of veterans who have recieved homes.</a></li>
+        </ul>
     </div>
  <div class="button-container">
         <a href="https://www.hfotusa.org/" class="learn-more" target="_blank">Learn More</a>
