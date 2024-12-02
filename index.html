@@ -259,16 +259,22 @@ const charities = [
     { title: "Samaritan's Purse", description: "Providing spiritual and physical aid to hurting people around the world.", url: "https://ProFFet9029.github.io/senior-project/SamaritansPurse.html" }
 ];
 
-        function updateFeaturedCharity() {
-        const randomIndex = Math.floor(Math.random() * charities.length);
-        const charity = charities[randomIndex];
+function updateFeaturedCharity() {
+    // Get the current date and calculate the day of the year
+    const today = new Date();
+    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
 
-        const featuredSection = document.getElementById("featuredCharity");
-        featuredSection.querySelector("h2").textContent = `Featured Charity: ${charity.title}`;
-        featuredSection.querySelector("p").textContent = charity.description;
-        featuredSection.querySelector("a").textContent = "Visit Charity";
-        featuredSection.querySelector("a").href = charity.url;
-        }
+    // Use the day of the year to select a charity (wrap around if it exceeds the array length)
+    const charityIndex = dayOfYear % charities.length;  // This ensures we stay within bounds
+    const charity = charities[charityIndex];
+
+    // Update the featured section with the selected charity
+    const featuredSection = document.getElementById("featuredCharity");
+    featuredSection.querySelector("h2").textContent = `Featured Charity: ${charity.title}`;
+    featuredSection.querySelector("p").textContent = charity.description;
+    featuredSection.querySelector("a").textContent = "Visit Charity";
+    featuredSection.querySelector("a").href = charity.url;
+}
     
     // Function to perform search
     function performSearch() {
@@ -294,7 +300,7 @@ const charities = [
     
     // Call the functions when the page loads
     document.addEventListener("DOMContentLoaded", () => {
-        updateFeaturedCharity(); // Rotate the featured charity
+    updateFeaturedCharity(); // Rotate the featured charity
     });
 </script>
 
