@@ -13,6 +13,11 @@
             background-color: #f1e9a6;
             color: #333;
         }
+        body::after{
+            content: '';
+            display: block;
+            height: 50px;
+        }
         header {
             background-color: #fa1a04;
             color: white;
@@ -54,7 +59,8 @@
         footer {
             background-color: #333;
             color: white;
-            padding: 10px;
+            /*padding: 5px;*/
+            max-height: 50px;
             text-align: center;
             position: fixed;
             bottom: 0;
@@ -90,7 +96,7 @@
         }
         .learn-more:hover, .donate:hover {
             background-color: #bc0e00;
-     
+        }
     </style>
 </head>
 <body>
@@ -114,9 +120,20 @@
     </div>
     <div class="impact">
         <h2>Charity Impact</h2>
-        <div class="large-percentage">~60%</div>
+        <div class="large-percentage">~75%</div>
         <div class="percentage-info">of donations go to various services and programs of the ASPCA Project.</div>
-        <p>Source: <a href= "https://www.aspca.org/about-us">Donation ASPCA Project</a></p>
+        <p>Source: <a href= "https://www.aspca.org/about-us/annual-report">Donation ASPCA Project</a></p>
+    </div>
+    <div class="news">
+        <h2>Recent Charity News/Events/Programs</h2>
+        <ul>
+            <li><a href="https://www.aspca.org/news/aspca-deploys-assist-aftermath-hurricane-helene" target="_blank">
+                ASPCA Continues Their Support with Hurricane Helene</a></li>
+            <li><a href="https://www.aspca.org/news/2024-subaru-share-lover-event-back-help-animals-need" target="_blank">
+                Subaru Share the Love Event</a></li>
+            <li><a href="https://www.aspca.org/news/help-aspca-once-neglected-senior-dog-transforms-and-starts-new-life"  target="_blank">
+                ASPCA Helps Senior Dog</a></li>
+        </ul>
     </div>
  <div class="button-container">
         <a href="https://www.aspca.org/" class="learn-more" target="_blank">Learn More</a>
