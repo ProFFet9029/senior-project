@@ -12,10 +12,10 @@ Getting help: Contact Jacob Harvison (w10150536@usm.edu) for more questions and 
 
 Maintained by Team 4 in ITC 400 Fall 2024. 
 Team is composed by:
-
-br /br /Jacob Harvison, Group Leader
-br /Caleb Holifield
-br /James Foster
-br /Dylan Burnside
-br /Chase Smith
-br /Quinton Holter
+<br />
+Jacob Harvison, Group Leader<br />
+Caleb Holifield<br />
+James Foster<br />
+Dylan Burnside<br />
+Chase Smith<br />
+Quinton Holter
