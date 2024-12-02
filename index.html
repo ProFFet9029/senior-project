@@ -219,6 +219,26 @@
         
         ];
 
+    const charities = [
+        {title: "Save the Children", description: "Save the Children works to improve the lives of children through education, healthcare, and protection from harm.", url: "https://www.savethechildren.org/"},
+        {title: "National Fire Prevention Association", description: "The NFPA is dedicated to eliminating death, injury, property, and economic loss due to fire and related hazards.", url: "https://ProFFet9029.github.io/senior-project/nfpa.html"},
+        {title: "Wounded Warrior Project", description: "Supports injured veterans and their families with services and programs.", url: "https://ProFFet9029.github.io/senior-project/Wounded%20Warrior%20Project.html"},
+        {title: "Homes For Our Troops", description: "Builds and donates specially adapted custom homes for severely injured post-9/11 veterans.", url: "https://ProFFet9029.github.io/senior-project/Homes%20for%20Our%20Troops%2C%20Inc.html"},
+        {title: "Direct Relief", description: "Provides medical resources to communities in need worldwide.", url: "https://ProFFet9029.github.io/senior-project/DirectRelief.html"}
+        // Add all other charities here...
+        ];
+
+        function updateFeaturedCharity() {
+        const randomIndex = Math.floor(Math.random() * charities.length);
+        const charity = charities[randomIndex];
+
+        const featuredSection = document.getElementById("featuredCharity");
+        featuredSection.querySelector("h2").textContent = `Featured Charity: ${charity.title}`;
+        featuredSection.querySelector("p").textContent = charity.description;
+        featuredSection.querySelector("a").textContent = "Visit Charity";
+        featuredSection.querySelector("a").href = charity.url;
+        }
+    
     // Function to perform search
     function performSearch() {
         const input = document.getElementById("searchInput").value.toLowerCase();
@@ -240,6 +260,11 @@
             resultsContainer.innerHTML = "<li>No results found</li>";
         }
     }
+    
+    // Call the functions when the page loads
+    document.addEventListener("DOMContentLoaded", () => {
+        updateFeaturedCharity(); // Rotate the featured charity
+    });
 </script>
 
 </body>
